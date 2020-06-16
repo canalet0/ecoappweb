@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style_source %}
+    <link rel="stylesheet" href="{% static '/styles/collectionPoints.css' %}">
+{% endblock style_source %}
+
+{% block head %}
+    <title>Pontos de coleta</title>
+{% endblock head %}
+
+{% block body %}
+    <body>
+    {% include "pageHeader.html" %}
+
+        <main>
+            <h4>
+                <strong>1 ponto(s)</strong>
+                encontrado(s)
+            </h4>
+    
+            <div class="cards">
+                <div class="card border-0">
+                    <img src="{% static '/output/empresa1.jpg' %}" alt="Ponto de coleta teste">
+                    <h1><bold>Ponto de coleta teste</bold></h1>
+                    <h3>Papel</h3>
+                    <p>
+                        Farroupilha, Rio Grande do sul
+                        <br/>
+                        José Maioli, 763
+                        <br/>
+                        Monte Pasqual
+                    </p>
+                </div>
+                <div class="card border-0">
+                    <img src="{% static '/output/empresa2.jpg' %}" alt="Ponto de coleta teste">
+                    <h1><bold>Ponto de coleta teste</bold></h1>
+                    <h3>Lâmpada</h3>
+                    <p>
+                        Farroupilha, Rio Grande do sul
+                        <br/>
+                        José Maioli, 763
+                        <br/>
+                        Monte Pasqual
+                    </p>
+                </div>
+                <div class="card border-0">
+                    <img src="{% static '/output/empresa3.png' %}" alt="Ponto de coleta teste">
+                    <h1><bold>Ponto de coleta teste</bold></h1>
+                    <h3>Eletrônicos</h3>
+                    <p>
+                        Farroupilha, Rio Grande do sul
+                        <br/>
+                        José Maioli, 763
+                        <br/>
+                        Monte Pasqual
+                    </p>
+                </div>
+            </div>
+            <h4><strong>Nenhum</strong> local encontrado</h4>
+        </main>
+
+    </body>
+{% endblock body%}
